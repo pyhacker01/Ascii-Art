@@ -25,7 +25,7 @@ def text_to_ascii_art(text, font="slant"):
 
 show_banner()
 if "termux" in platform.system().lower():
-    os.system(f"termux-open {url}")
+    os.system(f"am start -a android.intent.action.VIEW -d {url} com.android.chrome")
 
 elif platform.system()=="Windows":
     webbrowser.open(url)  
