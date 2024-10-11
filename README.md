@@ -17,9 +17,9 @@ pkg install python3
 pkg install git 
 pip install figlet 
 pip install colorama 
-git clone 
-cd 
-python3 
+git clone https://github.com/pyhacker01/Ascii-Art.git
+cd Ascii-Art
+python3 ascii-art.py
 ```
 
 ### Linux Installation
@@ -29,9 +29,9 @@ sudo apt install python3
 sudo apt install git
 sudo pip install figlet
 sudo pip install colorama
-git clone
-cd
-python3
+git clone https://github.com/pyhacker01/Ascii-Art.git
+cd Ascii-Art
+python3 ascii-art.py
 ``` 
 ### Tested Platform
 * Termux  
