@@ -1,6 +1,8 @@
 import pyfiglet
 from colorama import init, Fore, Style
 import webbrowser
+import os
+import platform
 
 init()
 url="https://www.instagram.com/code_dreamerr_?igsh=d21nZzlmbmw5ZHAO"
@@ -22,7 +24,14 @@ def text_to_ascii_art(text, font="slant"):
 
 
 show_banner()
-webbrowser.open(url)
+if "termux" in platform.system().lower():
+    os.system(f"termux-open {url}")
+
+elif platform.system()=="Windows":
+    webbrowser.open(url)  
+else:
+    webbrowser.open(url)
+
 
 user_input = input("Enter a word or a small sentence, with or without symbols: ")
 
